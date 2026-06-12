@@ -17,3 +17,6 @@
 .logo img{
     border-radius: 50%;
 }
+body{
+    background-image: url("./background.jpeg");
+}
