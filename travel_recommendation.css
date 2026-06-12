@@ -1,0 +1,19 @@
+.navigation_bar{
+    background-color:rgb(7, 112, 204);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    border-radius: 10px;
+}   
+.nav_links{
+    color:antiquewhite;
+    margin: 0 35px;
+}
+.nav_links:hover{
+    color:black;
+    background-color:white;
+}
+.logo img{
+    border-radius: 50%;
+}
