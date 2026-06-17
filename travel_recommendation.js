@@ -28,4 +28,19 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('.Search_bar input').value = "";
     console.log("Ok cleared!");
   }
-  
+  fetch('travel_recommendation.json')
+  .then(response=>response.json())
+  .then(data=>{
+    const container=document.getElementById('Display_suggestions');
+    const formattedData=data.map(place=>{
+        return `
+         <div class="place_card">
+         <img src="${place.imageUrl}" alt="${place.name}">
+          <h3>${place.name}</h3>
+          <p>${place.description}</p>
+         </div>  `
+    }).join('');
+    container.innerHTML=formattedData;
+
+  })
+  .catch(error=>console.error("Error loading json:",error));

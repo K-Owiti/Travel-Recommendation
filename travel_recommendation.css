@@ -24,3 +24,10 @@ body{
     background-position: center;
     min-height:100vh
 }
+#heading{
+       color:antiquewhite;
+}
+#introduction{
+    color:white;
+
+}
